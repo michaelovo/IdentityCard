@@ -4,7 +4,15 @@ void main() => runApp(MaterialApp(
   home: idCard(),
 ));
 
-class idCard extends StatelessWidget {
+
+class idCard extends StatefulWidget {
+  @override
+  _idCardState createState() => _idCardState();
+}
+
+class _idCardState extends State<idCard> {
+  int EntryLevel=0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,6 +87,22 @@ class idCard extends StatelessWidget {
                 fontSize: 20.0,
               ),),
             SizedBox(height: 15.0,),
+            Text('Entry Level',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                letterSpacing: 0.5,
+                fontSize: 20.0,
+              ),),
+            SizedBox(height: 5.0,),
+            Text('$EntryLevel',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.pink,
+                letterSpacing: 1.0,
+                fontSize: 20.0,
+              ),),
+            SizedBox(height: 15.0,),
 
             Text('Phone',
               style: TextStyle(
@@ -124,7 +148,7 @@ class idCard extends StatelessWidget {
             )
           ],
         ),
-        
+
       ),
     );
   }
