@@ -17,7 +17,7 @@ class _idCardState extends State<idCard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Oak Telecoms and Technology'),
+        title: Text('XXXX Telecoms'),
         backgroundColor: Colors.pink[900],
         centerTitle: true,
         elevation: 0.0,
@@ -29,7 +29,7 @@ class _idCardState extends State<idCard> {
           });
         },
         child: Icon(Icons.add),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.pink[900],
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 0.0),
@@ -38,7 +38,7 @@ class _idCardState extends State<idCard> {
           children: <Widget>[
             Center(
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/photo-2.jpg'),
+                backgroundImage: AssetImage('assets/photo-1.png'),
                 radius: 50.0,
               ),
             ),
@@ -72,7 +72,7 @@ class _idCardState extends State<idCard> {
                 fontSize: 20.0,
               ),),
             SizedBox(height: 5.0,),
-            Text('Oghenevwede Emmanuel',
+            Text('Ovo Vwegba',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.pink,
@@ -121,7 +121,7 @@ class _idCardState extends State<idCard> {
                 fontSize: 20.0,
               ),),
             SizedBox(height: 5.0,),
-            Text('08032089623',
+            Text('xxx-xxx-xxxx',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.pink,
@@ -146,7 +146,7 @@ class _idCardState extends State<idCard> {
                   color: Colors.pink,
                 ),
                 SizedBox(height: 5.0,),
-                Text('emikeovo@gmail.com',
+                Text('ovo@gmail.com',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.pink,
