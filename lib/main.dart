@@ -22,6 +22,15 @@ class _idCardState extends State<idCard> {
         centerTitle: true,
         elevation: 0.0,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            EntryLevel += 1;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.green,
+      ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 0.0),
         child: Column(
